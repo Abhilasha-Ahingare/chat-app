@@ -15,11 +15,20 @@ const app = express();
 
 app.use(
   cors({
-    origin: [process.env.ORIGIN],
+    // origin: [process.env.ORIGIN],
+    origin: [
+      "http://localhost:5173", // Your local development
+
+      "https://talk-buddy.vercel.app/login", // Your Vercel frontend
+
+      " https://chat-app-backend-7vb2.onrender.com", // Your Render backend (if needed)
+    ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
 
 app.use("/uploads/profiles", express.static("uploads/profiles"));
 app.use("/uploads/files", express.static("uploads/files"));
