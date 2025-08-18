@@ -19,7 +19,7 @@ app.use(
     origin: [
       "http://localhost:5173", // Your local development
 
-      "https://talk-buddy.vercel.app/login", // Your Vercel frontend
+      "https://talk-buddy.vercel.app", // Your Vercel frontend
 
       " https://chat-app-backend-7vb2.onrender.com", // Your Render backend (if needed)
     ],
