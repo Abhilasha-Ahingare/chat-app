@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "/server.js",
+      "src": "server.js",
       "use": "@vercel/node"
     },
     {
-      "src": "client-side/vite.config.js",
+      "src": "clent-side/vite.config.js",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "client-side/dist"
+        "distDir": "clent-side/dist"
       }
     }
   ],
@@ -20,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "client-side/dist/$1"
+      "dest": "clent-side/dist/$1"
     }
   ]
 }
