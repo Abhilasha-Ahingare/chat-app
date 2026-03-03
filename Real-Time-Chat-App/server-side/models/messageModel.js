@@ -7,6 +7,7 @@ const messageSchema = new Schema({
     ref: "User",
     required: false,
   },
+  
   messageType: {
     type: String,
     enum: ["text", "file"],
