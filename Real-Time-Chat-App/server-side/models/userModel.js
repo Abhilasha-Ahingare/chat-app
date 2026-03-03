@@ -14,6 +14,7 @@ const userSchema = new Schema({
   },
 });
 
+
 // 🔐 Password Hashing Middleware
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next(); 
