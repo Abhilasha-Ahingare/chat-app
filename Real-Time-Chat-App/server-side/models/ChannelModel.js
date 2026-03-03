@@ -8,6 +8,7 @@ const channelSchem = new Schema({
   updateAt: { type: Date, default: Date.now() },
 });
 
+
 channelSchem.pre("save", function (next) {
   this.updateAt = Date.now();
   next();
