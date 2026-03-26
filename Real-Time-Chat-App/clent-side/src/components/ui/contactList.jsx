@@ -14,8 +14,6 @@ const ContactList = ({ contacts, isChannel = false }) => {
   );
   const setShowContacts = userStore(state => state.setShowContacts);
 
-  
-
 const handleClick = (contact) => {
   setSelectedChatData(contact);
   setSelectedChatType(isChannel ? "channel" : "contact");
