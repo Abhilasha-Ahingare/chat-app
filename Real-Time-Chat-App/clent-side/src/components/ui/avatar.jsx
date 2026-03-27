@@ -14,8 +14,6 @@ function Avatar({
       {...props} />
   );
 }
-
-
 function AvatarImage({
   className,
   ...props
