@@ -23,7 +23,6 @@ const handleClick = (contact) => {
     setShowContacts(false);
   }
 };
-
   return (
     <div className="flex flex-col gap-4" style={{ marginLeft: "9px" }}>
       {contacts.map((constants) => {
