@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import ContactsContainer from "../contacts-contaier/ContactsContainer";
 import ChatsContsiner from "./chat-conrainer";
 import { userStore } from "@/store/store";
-
 const MobileChatLayout = () => {
   const showContacts = userStore((state) => state.showContacts);
   const selectedChatData = userStore((state) => state.selectedChatData);
