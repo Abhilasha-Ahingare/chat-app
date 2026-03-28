@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import ContactsContainer from "./contacts-contaier/ContactsContainer";
 import EmptyContainer from "./empty-chat-container";
 import ChatsContsiner from "./chat-conrainer";
-
 const Chats = () => {
   const {
+    
     userInfo,
     selectedChatType,
     isUploading,
