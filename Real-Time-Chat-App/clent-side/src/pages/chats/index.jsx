@@ -4,5 +4,4 @@ import MobileChatLayout from "./MobileChatLayout";
 const ChatsPage = () => {
   return <MobileChatLayout />;
 };
-
 export default ChatsPage;
