@@ -6,7 +6,6 @@ import EmptyContainer from "./empty-chat-container";
 import ChatsContsiner from "./chat-conrainer";
 const Chats = () => {
   const {
-    
     userInfo,
     selectedChatType,
     isUploading,
