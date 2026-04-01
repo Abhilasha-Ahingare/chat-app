@@ -5,7 +5,8 @@ export const Option = React.memo(({ label, value, disabled }) => {
 });
 
 
-const MultipleSelector = ({ defaultOptions = [], placeholder, emptyIndicator }) => {
+const MultipleSelector = ({ defaultOptions = [], placeholder, 
+  emptyIndicator }) => {
   const [selectedOptions, setSelectedOptions] = React.useState([]);
 
   return (
