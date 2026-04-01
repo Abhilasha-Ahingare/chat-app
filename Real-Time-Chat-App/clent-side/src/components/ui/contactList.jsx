@@ -5,6 +5,7 @@ import { HOST } from "@/utils/constants";
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 import React, { useState } from "react";
 
+
 const ContactList = ({ contacts, isChannel = false }) => {
   const selectedChatData = userStore((state) => state.selectedChatData);
   const setSelectedChatType = userStore((state) => state.SetSelectedChatType);
