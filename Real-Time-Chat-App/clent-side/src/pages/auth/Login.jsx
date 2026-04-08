@@ -7,6 +7,7 @@ import { SINGUP_ROUTE, LOGIN_ROUTE } from "@/utils/constants";
 import { useNavigate } from "react-router-dom";
 import { userStore } from "@/store/store";
 
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
